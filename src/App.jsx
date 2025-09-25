@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 
 const RECIPES = [
-  const RECIPES = [
   {
     id: 1,
     title: "5-Min Pasta Aglio e Olio",
@@ -69,7 +68,9 @@ function Card({ r }) {
 export default function App() {
   const [query, setQuery] = useState("");
   const filtered = useMemo(
-    () => RECIPES.filter((r) => r.title.toLowerCase().includes(query.toLowerCase())),
+    () => RECIPES.filter((r) => (r.title + " " + r.tags.join(" "))
+      .toLowerCase()
+      .includes(query.toLowerCase())),
     [query]
   );
 
