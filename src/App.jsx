@@ -47,7 +47,7 @@ const RECIPES = [
     protein: 4,
     carbs: 18,
     fat: 3,
-    img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop"
+    img: "https://images.unsplash.com/photo-1617196039897-6c13fc0d7e76?q=80&w=1200&auto=format&fit=crop"
   }
 ];
 
