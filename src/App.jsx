@@ -11,7 +11,7 @@ const RECIPES = [
     protein: 12,
     carbs: 70,
     fat: 22,
-    img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop"
+    img: "https://picsum.photos/seed/courgettesoup/1200/800"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const RECIPES = [
     protein: 22,
     carbs: 48,
     fat: 12,
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop"
+    img: "https://picsum.photos/seed/courgettesoup/1200/800"
   },
   {
     id: 3,
