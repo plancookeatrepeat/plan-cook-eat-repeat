@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 
 const RECIPES = [
+  const RECIPES = [
   {
     id: 1,
     title: "5-Min Pasta Aglio e Olio",
@@ -11,7 +12,7 @@ const RECIPES = [
     protein: 12,
     carbs: 70,
     fat: 22,
-    img: img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: 2,
@@ -23,7 +24,7 @@ const RECIPES = [
     protein: 22,
     carbs: 48,
     fat: 12,
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: 3,
@@ -35,18 +36,20 @@ const RECIPES = [
     protein: 18,
     carbs: 72,
     fat: 20,
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
-  },{
-  id: 4,
-  title: "Courgette en prei soep",
-  cost: "€",
-  time: 15,
-  tags: ["soep", "budget", "snel"],
-  kcal: 120,
-  protein: 4,
-  carbs: 18,
-  fat: 3,
-  img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    id: 4,
+    title: "Courgette-prei soep",
+    cost: "€",
+    time: 15,
+    tags: ["soep", "budget", "snel"],
+    kcal: 120,
+    protein: 4,
+    carbs: 18,
+    fat: 3,
+    img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop"
+  }
 ];
 
 function Card({ r }) {
