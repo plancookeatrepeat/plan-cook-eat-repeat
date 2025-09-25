@@ -11,7 +11,7 @@ const RECIPES = [
     protein: 12,
     carbs: 70,
     fat: 22,
-    img: "https://picsum.photos/seed/courgettesoup/1200/800"
+    img: "https://picsum.photos/seed/pasta123/1200/800",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const RECIPES = [
     protein: 22,
     carbs: 48,
     fat: 12,
-    img: "https://picsum.photos/seed/courgettesoup/1200/800"
+    img: "https://picsum.photos/seed/chili456/1200/800",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const RECIPES = [
     protein: 18,
     carbs: 72,
     fat: 20,
-    img:"https://picsum.photos/seed/eggfried/1200/800"
+    img: "https://picsum.photos/seed/eggs789/1200/800",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const RECIPES = [
     protein: 4,
     carbs: 18,
     fat: 3,
-    img: "https://picsum.photos/seed/courgettesoup/1200/800"
+    img: "https://picsum.photos/seed/soup321/1200/800",
   }
 ];
 
