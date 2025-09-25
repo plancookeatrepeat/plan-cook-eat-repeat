@@ -35,7 +35,7 @@ const RECIPES = [
     protein: 18,
     carbs: 72,
     fat: 20,
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop"
+    img:"https://picsum.photos/seed/eggfried/1200/800"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const RECIPES = [
     protein: 4,
     carbs: 18,
     fat: 3,
-    img: "https://images.unsplash.com/photo-1617196039897-6c13fc0d7e76?q=80&w=1200&auto=format&fit=crop"
+    img: "https://picsum.photos/seed/courgettesoup/1200/800"
   }
 ];
 
