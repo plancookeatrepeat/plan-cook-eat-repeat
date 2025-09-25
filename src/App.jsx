@@ -11,7 +11,7 @@ const RECIPES = [
     protein: 12,
     carbs: 70,
     fat: 22,
-    img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop",
+    img: img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const RECIPES = [
     fat: 20,
     img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
   },{
-  id: 5,
+  id: 4,
   title: "Courgette en prei soep",
   cost: "€",
   time: 15,
@@ -46,8 +46,7 @@ const RECIPES = [
   protein: 4,
   carbs: 18,
   fat: 3,
-  img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop"
-}
+  img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop",
 ];
 
 function Card({ r }) {
