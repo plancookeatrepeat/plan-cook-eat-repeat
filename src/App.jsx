@@ -36,7 +36,18 @@ const RECIPES = [
     carbs: 72,
     fat: 20,
     img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
-  },
+  },{
+  id: 4,
+  title: "Courgettesoep met prei",
+  cost: "€",
+  time: 15,
+  tags: ["soep", "budget", "snel"],
+  kcal: 120,
+  protein: 4,
+  carbs: 18,
+  fat: 3,
+  img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?q=80&w=1200&auto=format&fit=crop"
+}
 ];
 
 function Card({ r }) {
