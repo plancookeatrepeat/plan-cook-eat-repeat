@@ -8,13 +8,15 @@ const RECIPES = [
     kcal: 520,
     img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80"
   },
+  
   {
-    id: 2,
-    title: "Budget Chili Beans",
-    time: 20,
-    kcal: 430,
-    img: "https://images.unsplash.com/photo-1605478371310-a2c9b7d1a9b6?auto=format&fit=crop&w=800&q=80"
-  },
+  id: 2,
+  title: "Budget Chili Beans",
+  time: 20,
+  kcal: 430,
+  img: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1200&q=80"
+},
+
   {
     id: 3,
     title: "Courgette-prei soep",
