@@ -52,6 +52,7 @@ function App() {
 }
 
 export default App;
+
   const [query, setQuery] = useState("");
   const filtered = useMemo(
     () => RECIPES.filter((r) => (r.title + " " + r.tags.join(" "))
