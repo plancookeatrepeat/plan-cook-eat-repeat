@@ -1,53 +1,26 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
 
 const RECIPES = [
   {
     id: 1,
     title: "5-Min Pasta Aglio e Olio",
-    cost: "€",
     time: 10,
-    tags: ["vegetarian", "cheap", "fast"],
     kcal: 520,
-    protein: 12,
-    carbs: 70,
-    fat: 22,
-    img: "https://picsum.photos/seed/pasta123/1200/800",
+    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     title: "Budget Chili Beans",
-    cost: "€",
     time: 20,
-    tags: ["mealprep", "cheap"],
     kcal: 430,
-    protein: 22,
-    carbs: 48,
-    fat: 12,
-    img: "https://picsum.photos/seed/chili456/1200/800",
+    img: "https://images.unsplash.com/photo-1604908177071-3251ec2cc35e?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
-    title: "Egg Fried Rice",
-    cost: "€",
-    time: 12,
-    tags: ["fast", "cheap", "eggs"],
-    kcal: 560,
-    protein: 18,
-    carbs: 72,
-    fat: 20,
-    img: "https://picsum.photos/seed/eggs789/1200/800",
-  },
-  {
-    id: 4,
     title: "Courgette-prei soep",
-    cost: "€",
     time: 15,
-    tags: ["soep", "budget", "snel"],
     kcal: 120,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    img: "https://picsum.photos/seed/soup321/1200/800",
+    img: "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -65,7 +38,21 @@ function Card({ r }) {
   );
 }
 
-export default function App() {
+function App() {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6">Plan. Cook. Eat. Repeat.</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {RECIPES.map((r) => (
+          <Card key={r.id} r={r} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default App;
+{
   const [query, setQuery] = useState("");
   const filtered = useMemo(
     () => RECIPES.filter((r) => (r.title + " " + r.tags.join(" "))
