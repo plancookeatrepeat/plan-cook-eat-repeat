@@ -6,36 +6,13 @@
   color-scheme: light dark;
 }
 .modal {
-  background: #ffffff; /* wit */
-  color: #000000;      /* zwarte tekst */
+  background: #ffffff; /* witte achtergrond */
+  color: red;          /* testkleur rood */
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
   margin: 40px auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;       /* zorgt dat het boven alles staat */
 }
 
-.modal h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.modal p {
-  font-size: 1rem;
-  margin: 5px 0;
-}
-
-.modal button {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.modal button:hover {
-  background: #555;
-}
