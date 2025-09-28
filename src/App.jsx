@@ -82,44 +82,34 @@ function Card({ r, onOpen }) {
 
 function Modal({ recipe, onClose }) {
   if (!recipe) return null;
+
   return (
     <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
-      <div className="bg-white max-w-xl w-full rounded-2xl overflow-hidden shadow-lg">
+      {/* ⤵ voeg hier 'modal' toe */}
+      <div className="modal bg-white text-neutral-900 max-w-xl w-full rounded-2xl overflow-hidden shadow-lg">
         <img src={recipe.img} alt={recipe.title} className="w-full h-56 object-cover" />
         <div className="p-5">
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-2xl font-extrabold">{recipe.title}</h2>
-              <p className="text-sm opacity-80">{recipe.time} min • {recipe.kcal} kcal</p>
+              <p className="text-sm">{recipe.time} min • {recipe.kcal} kcal</p>
             </div>
             <button
               onClick={onClose}
               className="px-3 py-1.5 rounded-lg border hover:bg-neutral-100"
-              aria-label="Sluit recept"
             >
               Sluiten
             </button>
           </div>
 
-          <div className="mt-4 grid sm:grid-cols-2 gap-6">
-            <div>
-              <h3 className="font-semibold mb-2">Ingrediënten</h3>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
-                {recipe.ingredients.map((i, idx) => <li key={idx}>{i}</li>)}
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">Stappen</h3>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
-                {recipe.steps.map((s, idx) => <li key={idx}>{s}</li>)}
-              </ol>
-            </div>
-          </div>
+          {/* voorbeeld als je ingredients/steps hebt */}
+          {/* ... */}
         </div>
       </div>
     </div>
   );
 }
+
 
 export default function App() {
   const [openRecipe, setOpenRecipe] = useState(null);
