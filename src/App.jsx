@@ -30,15 +30,13 @@ function Card({ r }) {
       <img src={r.img} alt={r.title} className="w-full h-40 object-cover" />
       <div className="p-4">
         <h3 className="font-bold text-lg mb-1">{r.title}</h3>
-        <p className="text-sm opacity-80">
-          {r.time} min • {r.kcal} kcal
-        </p>
+        <p className="text-sm opacity-80">{r.time} min • {r.kcal} kcal</p>
       </div>
     </article>
   );
 }
 
-function App() {
+export default function App() {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-6">Plan. Cook. Eat. Repeat.</h1>
@@ -48,33 +46,5 @@ function App() {
         ))}
       </div>
     </div>
-  );
-}
-
-export default App;
-
-  const [query, setQuery] = useState("");
-  const filtered = useMemo(
-    () => RECIPES.filter((r) => (r.title + " " + r.tags.join(" "))
-      .toLowerCase()
-      .includes(query.toLowerCase())),
-    [query]
-  );
-
-  return (
-    <main className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-extrabold mb-4">Plan. Cook. Eat. Repeat.</h1>
-      <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Zoek recept"
-        className="border p-2 rounded w-full mb-6"
-      />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((r) => (
-          <Card r={r} key={r.id} />
-        ))}
-      </div>
-    </main>
   );
 }
