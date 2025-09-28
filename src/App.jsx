@@ -14,7 +14,6 @@ const RECIPES = [
     time: 20,
     kcal: 430,
     img: "https://images.unsplash.com/photo-1605478371310-a2c9b7d1a9b6?auto=format&fit=crop&w=800&q=80"
-
   },
   {
     id: 3,
